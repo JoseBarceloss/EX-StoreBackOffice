@@ -1,0 +1,42 @@
+.register-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.register-container > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-container > form > button {
+  margin: 30px 7px 7px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 5px;
+  padding: 7px;
+  position: relative;
+  width: 350px;
+}
+
+label > * {
+  border: 1px solid rgb(34, 34, 34);
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+label:has( > *[ required ] ):after {
+  color: red;
+  content: '*';
+  left: 0;
+  position: absolute;
+  top: 0;
+}

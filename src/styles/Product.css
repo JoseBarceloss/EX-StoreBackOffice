@@ -1,0 +1,56 @@
+.list-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 99vw;
+}
+
+.product-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+}
+
+.product-container > img {
+  height: 100%;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.product-container > h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.product-container > button {
+  align-self: flex-end;
+  background: initial;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 18%;
+  padding: 0;
+}
+
+.product-container > ul {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
+
+.product-container > ul > li {
+  background: rgb(238, 238, 238);
+  border-radius: 19px;
+  font-size: 20px;
+  padding: 5px 10px;
+}
